@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-11-19T11:56:02 IST" name="Default suite" finished-at="2019-11-19T11:56:29 IST" duration-ms="27370">
+    <groups>
+    </groups>
+    <test started-at="2019-11-19T11:56:02 IST" name="Default test" finished-at="2019-11-19T11:56:29 IST" duration-ms="27370">
+      <class name="BasePage.BaseClass">
+        <test-method signature="Browser()[pri:0, instance:BasePage.BaseClass@534df152]" started-at="2019-11-19T11:56:02 IST" name="Browser" finished-at="2019-11-19T11:56:29 IST" duration-ms="27302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Browser -->
+      </class> <!-- BasePage.BaseClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

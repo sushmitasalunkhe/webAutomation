@@ -1,0 +1,14 @@
+package Pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class CompanySearch {
+	WebElement ele=null;
+	
+	public void Searchbox(WebDriver driver) {
+		 ele=driver.findElement();
+		 
+	}
+
+}

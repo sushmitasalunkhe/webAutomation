@@ -1,0 +1,23 @@
+package BasePage;
+
+import org.testng.annotations.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.Test;
+
+public class BaseClass {
+	@Test
+	public void Browser() {
+		System.setProperty("webdriver.gecko.driver", "/home/ankur-loktra/eclipse-workspace/automation/Drivers/geckodriver/geckodriver");
+		WebDriver driver=new FirefoxDriver();
+		
+		driver.get("https://www.instafinancials.com/company/cbl-data-science-private-limited/U72501KA2016PTC092387"); 
+	//driver.findElement(By.xpath("(//button[@href='javascript:void(0)'])[2]")).click();
+		//@FindBy(xpath = "//button[@onclick='_izooto.closeDialog();'][contains(.,'Later')]")
+		//WebElement popUpLater;
+	}
+
+}

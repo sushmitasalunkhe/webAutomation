@@ -1,0 +1,16 @@
+package BasePage;
+
+import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class BaseClass {
+	@Test
+	public void Browser() {
+		WebDriver driver=new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver", "/home/ankur-loktra/eclipse-workspace/automation/Drivers/geckodriver/geckodriver");
+		driver.get("https://www.google.com/url?q=https://www.instafinancials.com/company/cbl-data-science-private-limited/U72501KA2016PTC092387"); 
+	}
+
+}

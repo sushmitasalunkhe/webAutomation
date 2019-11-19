@@ -1,0 +1,30 @@
+package BasePage;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class BaseClass {
+	@Test
+	public void Browser() throws InterruptedException {
+		System.setProperty("webdriver.gecko.driver", "/home/ankur-loktra/eclipse-workspace/automation/Drivers/geckodriver/geckodriver");
+		WebDriver driver=new FirefoxDriver();
+		
+		driver.get("https://www.instafinancials.com/company/cbl-data-science-private-limited/U72501KA2016PTC092387"); 
+		Thread.sleep(5000);
+		
+		
+	WebElement popup1=driver.findElement(By.xpath("//button[contains(.,'Later')]"));
+	popup1.click();
+	Alert alert=(Alert) driver.findElement(By.className("g-9dgeq9"));
+	alert.dismiss();
+	
+		//driver.findElement(By.xpath("(//button[@href='javascript:void(0)'])[2]")).click();
+		//@FindBy(xpath = "//button[@onclick='_izooto.closeDialog();'][contains(.,'Later')]")
+		//WebElement popUpLater;
+	}
+
+}

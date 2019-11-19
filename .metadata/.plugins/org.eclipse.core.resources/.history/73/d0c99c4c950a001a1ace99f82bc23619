@@ -1,0 +1,17 @@
+package Pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class CompanySearch {
+	WebElement ele=null;
+	
+	public WebElement Searchbox(WebDriver driver) {
+		 ele=driver.findElement(By.name("top-search"));
+		 return ele;
+		 
+		 
+	}
+
+}
